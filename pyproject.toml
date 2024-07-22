@@ -20,5 +20,8 @@ dependencies = [
 	"matplotlib>=3.8.4",
 ]
 
+[tool.setuptools.packages.find]
+where = ["mazunki"]
+
 #  vim: set sw=8 ts=8
 
