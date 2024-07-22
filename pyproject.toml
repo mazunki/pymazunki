@@ -7,7 +7,7 @@ name = "mazunki"
 version = "0.1.dev1"
 description = "A bunch of helper thingies, nothing in particular."
 readme = "README.md"
-author = [
+authors = [
 	{name="Mazunki Hoksaas", email= "rolferen@gmail.com"}
 ]
 license = { text = "GPL3.0" }
