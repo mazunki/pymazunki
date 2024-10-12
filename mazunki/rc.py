@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
-import platform
 import pathlib
-import readline, rlcompleter  # ignore: reportUnusedImport
+import platform
+import readline  # ignore: reportUnusedImport
+import rlcompleter
 
 from mazunki import xdg
 
@@ -26,6 +27,7 @@ def ready_history_file(_history, _python_rtp):
     try:
         readline.read_history_file(_history)
     except FileNotFoundError:
+        print("couldn't read history!", _history)
         pathlib.Path(_python_rtp).mkdir(parents=True, exist_ok=True)
 
 
